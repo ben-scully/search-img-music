@@ -1,0 +1,25 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+  <body>
+  <div id="bg">
+    <div id="sc">
+      <img src="http://placehold.it/350x150">
+    </div>
+    <div id="searchForm">
+      <input type="text" id="searchTerm">
+      <button onclick="hide()" id="searchBtn" value="Submit"></input>
+    </div>
+  </div>
+
+  <script>function hide(){
+    console.log("hide")
+    document.getElementById("searchTerm").style.visibility = "hidden";
+    document.getElementById("searchBtn").style.visibility = "hidden";
+  }
+  </script>
+
+  </body>
+</html>
