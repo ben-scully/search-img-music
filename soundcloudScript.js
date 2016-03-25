@@ -28,8 +28,3 @@ function renderViaSearch(search) {
     })
   })
 }
-
-
-var rdmSearch = "drake"
-
-renderViaSearch(rdmSearch)

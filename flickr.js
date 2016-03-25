@@ -1,15 +1,15 @@
 // tool for making http requests
 var request = require('request')
 //tool for accessing .env files
-var dotenv = require('dotenv')
-dotenv.load()
+// var dotenv = require('dotenv')
+// dotenv.load()
 
 
 function getFlickr(searchterm, callback) {
   //build our query using search term
   var query = [
   'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=',
-  process.env.FLICKR_APP_KEY,
+  "5a587065f1f84080f86d15f06e90736b",
   '&tags=',
   searchterm,
   '&per_page=1&format=json&nojsoncallback=1'
