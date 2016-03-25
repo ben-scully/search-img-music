@@ -1,11 +1,3 @@
-// var getSoundcloud = require('./getSoundcloud')
-// var renderSoundCloudPlayer = require('./renderSoundCloudPlayer')
-
-//   getSoundcloud(searchTerm, function(song) {
-//     renderSoundCloudPlayer(song, function (player) {
-//       document.append(player)
-//     })
-//   })
 SC.initialize({
   client_id: '5674633ed2c579ff191eaa6e9f9de6b5'
 });
