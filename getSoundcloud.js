@@ -4,28 +4,20 @@ SC.initialize({
 
 function getSoundCloud(searchTerm, callback) {
 
+  var searchTerm = document.getElementById("scTest").val
+
   var query = {
     q: searchTerm, license: 'cc-by-sa'
   }
 
   // find all sounds of buskers licensed under 'creative commons share alike'
   SC.get('/tracks', query).then( function(tracks) {
-    callback(tracks[0])
+    callback(tracks[0].permalink_url)
   });
 }
 
-getSoundCloud("drake", function (singleTrack) {
+getSoundCloud("justin timberlake", function () {
 
-  console.log(singleTrack)
 })
-
-//module.exports = getSoundCloud
-// console.log(tracks[0]);
-// function getSoundcloud(req,res) {
-
-  //gets the users input and replaces "q" with the term.
-
-
-
 
 
